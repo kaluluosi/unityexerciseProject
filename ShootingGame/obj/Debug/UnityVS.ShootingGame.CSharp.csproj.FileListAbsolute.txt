@@ -1,0 +1,9 @@
+D:\Documents\ShootingGame\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+D:\Documents\ShootingGame\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+D:\Documents\ShootingGame\Temp\UnityVS_bin\Debug\UnityEditor.dll
+D:\Documents\ShootingGame\Temp\UnityVS_bin\Debug\UnityEngine.dll
+D:\Documents\ShootingGame\Temp\UnityVS_bin\Debug\UnityEngine.xml
+D:\Documents\ShootingGame\Temp\UnityVS_bin\Debug\UnityEditor.xml
+D:\Documents\ShootingGame\obj\Debug\UnityVS.ShootingGame.CSharp.csprojResolveAssemblyReference.cache
+D:\Documents\ShootingGame\obj\Debug\Assembly-CSharp.dll
+D:\Documents\ShootingGame\obj\Debug\Assembly-CSharp.pdb
