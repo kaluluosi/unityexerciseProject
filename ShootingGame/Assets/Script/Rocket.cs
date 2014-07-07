@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEditor;
 
 public class Rocket : MonoBehaviour {
 
     public float speed = 10;
     public float liveTime = 1;
     public int damage = 1;
+    public GameObject explosionFX;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +27,7 @@ public class Rocket : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Enemy")) {
+            Instantiate(explosionFX, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

@@ -15,7 +15,7 @@ public class Bound : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
 
-        Debug.Log(string.Format("{0} Hit Bound",other.gameObject.name));
+//         Debug.Log(string.Format("{0} Hit Bound",other.gameObject.name));
         if (other.CompareTag("Player") == false) {
             Destroy(other.gameObject);
         }

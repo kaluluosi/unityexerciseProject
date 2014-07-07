@@ -65,12 +65,11 @@ public class Player : MonoBehaviour {
         //与敌人相撞减少HP
         if (other.CompareTag("PlayerRocket") == false) {
             hp--;
-            Debug.Log(hp + "  hp -1");
             PauseObject();
         }
 
         if (hp <= 0) {
-            GameObject expl = Instantiate(explosionFX, transform.position, transform.rotation) as GameObject;
+            Instantiate(explosionFX, transform.position, transform.rotation) ;
             Destroy(gameObject);
         }
 

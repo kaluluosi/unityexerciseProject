@@ -7,7 +7,8 @@ public class Enemy : MonoBehaviour {
     public float speed = 1;
     public float rotSpeed = 30;
     public float changeTimer = 1.5f;
-
+    public GameObject explosionFX;
+    private bool alive = true;
 
 	// Use this for initialization
 	void Start () {
@@ -33,13 +34,13 @@ public class Enemy : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
 
-        if (other.CompareTag("PlayerRocket")) {
+        if ((other.CompareTag("PlayerRocket")||other.CompareTag("Player") )&& alive == true) {
+            Instantiate(explosionFX, transform.position, transform.rotation);
             Destroy(gameObject);
+            alive = false;
+            GameManager.Instance.AddScore(1);
         }
 
-        if (other.CompareTag("Player")) {
-            Destroy(gameObject);
-        }
     }
     
     
